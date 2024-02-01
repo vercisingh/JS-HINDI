@@ -22,5 +22,5 @@ console.table([accountId,accountNumber]);
 
 console.log(typeof(undefined));// undefined
 console.log(typeof(null));// object
-console.log(typeof(bigint));
-console.log(typeof(symbol));
+let myBigInt=123n;
+console.log(typeof(myBigInt));//bigint
