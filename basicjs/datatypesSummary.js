@@ -10,9 +10,9 @@
 
 // if  you want to master js you need to master js "objects" and "web events" or "browser-events"
 // primitve examples 
-const id=Symbol("123");
-const anotherId = Symbol("123");
-console.log(id === anotherId);
+// const id=Symbol("123");
+// const anotherId = Symbol("123");
+// console.log(id === anotherId);
 
 
 //non-primitive examples
@@ -26,6 +26,41 @@ console.log(id === anotherId);
 
 //function
 
-let myFunction = function(){
-    console.log("Hello world");
-};
+// let myFunction = function(){
+//     console.log("Hello world");
+// };
+
+
+// ------------------------------------------------------------------------------
+
+//memory allocation 
+// stack (primitive ) we get copy of the variable  , 
+// heap(non-primitive) we get refernce of original value means any change is variable directly changes the origional variable
+
+
+// call by value (copy comes only)
+let  name = "ram";
+name1 = name;
+console.log(name);
+console.log(name1);
+name = "ramayan";
+console.log(name);
+console.log(name1);
+
+
+// call by reference (changes the original)
+let myObject ={
+    name:"Rohit",
+    age:28
+}
+
+console.log(myObject);
+let myObject1={
+    name:"raghav",
+    age:33
+}
+console.log(myObject1);
+// myObject = myObject1;
+console.log(myObject);
+myObject1=myObject;
+console.log(myObject1);
